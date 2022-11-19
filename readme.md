@@ -1,6 +1,6 @@
-# NobertoNutri | A app to manipulate client list including: add using forms and validation, remove, import (AJAX) and show errors
+# NobertoNutri | Client list and form using JS/AJAX
 
-Project developed as part of the Alura course "JavaScript: programando na linguagem da web".
+Project developed as part of the Alura course "JavaScript: programando na linguagem da web". IT consists of a web form to add new clients to a client list and also to manipulate this list including: add using forms and validation, remove, filter, import (AJAX) and show errors.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
