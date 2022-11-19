@@ -21,7 +21,7 @@ Project developed as part of the Alura course "JavaScript: programando na lingua
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 
-<img src='https://github.com/NobertoFerreiraFilho/Noberto-nutri-form-ajax/blob/main/img/form.png#vitrinedev' width=105/>
+<img src='https://github.com/NobertoFerreiraFilho/Noberto-nutri-form-ajax/blob/main/img/form.png#vitrinedev' width=500/>
 
 ## Lessons Learned
 
