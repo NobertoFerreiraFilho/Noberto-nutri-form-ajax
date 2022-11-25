@@ -7,13 +7,11 @@ botaoAdicionar.addEventListener("click", function (event) {
   var pacienteAdicionado = obtemPacienteDoFormulario(form);
 
   var erros = validaPaciente(pacienteAdicionado);
-    console.log(erros);
-
   if (erros.length > 0) {
     exibeMensagemDeErro(erros);
   } else {
-
-    adicionaPacienteNaTabela(paciente);
+    
+    adicionaPacienteNaTabela(pacienteAdicionado);
 
     form.reset();
     document.querySelector('#mensagens-erro').innerHTML = "";
@@ -24,6 +22,7 @@ botaoAdicionar.addEventListener("click", function (event) {
 
 function adicionaPacienteNaTabela(paciente){
   var pacienteAdicionadoTR = montaTR(paciente);
+
   var tabela = document.querySelector("#tabela-pacientes");
   tabela.appendChild(pacienteAdicionadoTR);
 }
@@ -38,7 +37,7 @@ function obtemPacienteDoFormulario(form) {
     gordura: form.gordura.value,
     imc: calculaImc(form.peso.value, form.altura.value),
   };
-
+  
   return paciente;
 }
 
@@ -70,6 +69,7 @@ function addClass(dado, classe) {
 
 function montaTd(dado, classe) {
   var td = document.createElement("td");
+  console.log(dado)
   td.textContent = dado;
   addClass(td, classe);
   return td;
@@ -115,5 +115,4 @@ function exibeMensagemDeErro(erros) {
         ul.appendChild(li);
     })   
     
-    console.log(ul);
 }
